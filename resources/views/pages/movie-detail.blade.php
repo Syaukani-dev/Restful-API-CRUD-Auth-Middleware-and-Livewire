@@ -57,7 +57,9 @@
                 @foreach ($movies as $movie)
                 <tr>
                     <div class="column">
-                        <img class="poster" src="{{ $movie->image_link }}" alt="poster">
+                        <a href="{{ $movie->video_link }}">
+                            <img class="poster" src="{{ $movie->image_link }}" alt="poster">
+                        </a>
                     </div>
                 </tr>
                 @endforeach
